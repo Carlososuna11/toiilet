@@ -1,11 +1,10 @@
-# importando una imagen de docker, en este caso alpine
-FROM alpine
+FROM ubuntu
 
 # instalación de librerias necesarias
-RUN apk update && apk upgrade
-RUN apk add figlet
+RUN apt-get update
+RUN apt-get install toilet -y
 
-# al momento de correr el contenedor, estará asociado al comando figlet
-ENTRYPOINT ["figlet"]
+# al momento de correr el contenedor, estará asociado al comando toilet
+ENTRYPOINT ["toilet"]
 # comando a ser atrapado, en caso de querer utilizarlo
 CMD ["--help"]
