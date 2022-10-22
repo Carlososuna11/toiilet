@@ -1,10 +1,8 @@
-# A minimal [figlet](http://www.figlet.org/) setup
-
-based on [alpine](https://hub.docker.com/_/alpine/).
+# A minimal [toilet](https://github.com/cacalabs/toilet) setup
 
 Run a container from this image like:
 ```terminal
-docker run --rm carlososuna11/figlet hello figlet
+docker run --rm carlososuna11/toilet hello toilet
 ```
 
 which should display:
