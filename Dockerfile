@@ -7,5 +7,5 @@ RUN apk add figlet
 
 # al momento de correr el contenedor, estará asociado al comando figlet
 ENTRYPOINT ["figlet"]
-# comando por default
+# comando a ser atrapado, en caso de querer utilizarlo
 CMD ["--help"]
