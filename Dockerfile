@@ -1,3 +1,4 @@
+# use ubuntu image
 FROM ubuntu
 
 # instalación de librerias necesarias
